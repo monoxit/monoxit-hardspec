@@ -1,0 +1,115 @@
+###########################################################################
+# ATTiny1634 @ 8 MHz (internal oscillator; BOD 2.7V)
+# MI100 default 
+###########################################################################
+attiny1634at8bod2d7TSB.name=ATTiny1634 @ 8 MHz (internal oscillator; BOD 2.7V; TSB)
+attiny1634at8bod2d7TSB.build.mcu=attiny1634
+attiny1634at8bod2d7TSB.build.f_cpu=8000000L
+attiny1634at8bod2d7TSB.build.core=tiny
+
+attiny1634at8bod2d7TSB.upload.tool=tsb
+attiny1634at8bod2d7TSB.upload.protocol=arduino
+attiny1634at8bod2d7TSB.upload.speed=9600
+attiny1634at8bod2d7TSB.upload.maximum_size=15744
+
+attiny1634at8bod2d7TSB.program.tool=avrdude
+attiny1634at8bod2d7TSB.program.protocol=arduino
+attiny1634at8bod2d7TSB.program.speed=9600
+attiny1634at8bod2d7TSB.program.maximum_size=16384
+
+attiny1634at8bod2d7TSB.erase.tool=avrdude
+attiny1634at8bod2d7TSB.erase.protocol=arduino
+attiny1634at8bod2d7TSB.erase.speed=9600
+attiny1634at8bod2d7TSB.erase.maximum_size=16384
+
+attiny1634at8bod2d7TSB.bootloader.tool=avrdude
+attiny1634at8bod2d7TSB.bootloader.protocol=arduino
+attiny1634at8bod2d7TSB.bootloader.speed=9600
+
+# 1 1 1 0 0010
+# CKDIV8 CKOUT - SUT CKSEL
+#
+# SUT 0 Enable
+# CKSEL 0010 Internal 8MHz
+attiny1634at8bod2d7TSB.bootloader.low_fuses=0xE2
+
+# 1 1 0 1 0 101
+# RSTDISBL DWEN SPIEN WDTON EESAVE BODLEVEL
+#
+# SPIEN    0 Enable
+# EESAVE   0 Enable
+# BODLEVEL 101 2.7(V)
+attiny1634at8bod2d7TSB.bootloader.high_fuses=0xD5
+
+# 111 01 01 0
+# - BODPD BODACT SELFPROGEN
+#
+# BODPD      01 Sampled
+# BODACT     01 Sampled
+# SELFPROGEN  0 Enable
+attiny1634at8bod2d7TSB.bootloader.extended_fuses=0xEA
+
+# Never Lock
+attiny1634at8bod2d7TSB.bootloader.unlock_bits=0xFF
+attiny1634at8bod2d7TSB.bootloader.lock_bits=0xFF
+attiny1634at8bod2d7TSB.bootloader.path={runtime.hardware.path}/tiny/bootloaders/tsb/
+attiny1634at8bod2d7TSB.bootloader.file=tn1634.hex
+
+###########################################################################
+# ATTiny1634 @ 1 MHz (internal oscillator; BOD 1.8V)
+###########################################################################
+attiny1634at1bod1d8TSB.name=ATTiny1634 @ 1 MHz (internal oscillator; BOD 1.8V; TSB)
+attiny1634at1bod1d8TSB.build.mcu=attiny1634
+attiny1634at1bod1d8TSB.build.f_cpu=1000000L
+attiny1634at1bod1d8TSB.build.core=tiny
+
+attiny1634at1bod1d8TSB.upload.tool=tsb
+attiny1634at1bod1d8TSB.upload.protocol=arduino
+attiny1634at1bod1d8TSB.upload.speed=4800
+attiny1634at1bod1d8TSB.upload.maximum_size=15744
+
+attiny1634at1bod1d8TSB.program.tool=avrdude
+attiny1634at1bod1d8TSB.program.protocol=arduino
+attiny1634at1bod1d8TSB.program.speed=9600
+attiny1634at1bod1d8TSB.program.maximum_size=16384
+
+attiny1634at1bod1d8TSB.erase.tool=avrdude
+attiny1634at1bod1d8TSB.erase.protocol=arduino
+attiny1634at1bod1d8TSB.erase.speed=9600
+attiny1634at1bod1d8TSB.erase.maximum_size=16384
+
+attiny1634at1bod1d8TSB.bootloader.tool=avrdude
+attiny1634at1bod1d8TSB.bootloader.protocol=arduino
+attiny1634at1bod1d8TSB.bootloader.speed=9600
+
+# 0 1 1 0 0010
+# CKDIV8 CKOUT - SUT CKSEL
+#
+# CKDIV8 0 Enable
+# SUT    0 Enable
+# CKSEL 0010 Internal 8MHz
+attiny1634at1bod1d8TSB.bootloader.low_fuses=0x62
+
+# 1 1 0 1 0 111
+# RSTDISBL DWEN SPIEN WDTON EESAVE BODLEVEL
+#
+# SPIEN    0 Enable
+# EESAVE   0 Enable
+# BODLEVEL 111 1.8(V)
+attiny1634at1bod1d8TSB.bootloader.high_fuses=0xD7
+
+# 111 01 01 0
+# - BODPD BODACT SELFPROGEN
+#
+# BODPD      01 Sampled
+# BODACT     01 Sampled
+# SELFPROGEN  0 Enable
+attiny1634at1bod1d8TSB.bootloader.extended_fuses=0xEA
+
+# Never Lock
+attiny1634at1bod1d8TSB.bootloader.unlock_bits=0xFF
+attiny1634at1bod1d8TSB.bootloader.lock_bits=0xFF
+
+attiny1634at1bod1d8TSB.bootloader.path={runtime.hardware.path}/tiny/bootloaders/tsb/
+attiny1634at1bod1d8TSB.bootloader.file=tn1634.hex
+
