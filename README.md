@@ -1,6 +1,6 @@
 # Project
 3rd party hardware specification for monoxit educational hardware modules.  
-Based on rduino-tiny core with Attiny1634 support.
+Based on Arduino-tiny core with Attiny1634 support.
 
 ## Manual Deployment
 The folder tree contains 3rd party hardware specification and arduino-tiny core with Attiny1634 support. The tree is designed for Arduino IDE 1.5.7 (or later possibly).  
