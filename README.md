@@ -1,6 +1,6 @@
 # Project
 Based on Arduino-tiny core with Attiny1634 support (https://github.com/rambo/arduino-tiny/tree/attiny1634).  
-The folder tree contains 3rd party hardware specification and arduino-tiny core with Attiny1634 support. The tree is designed for Arduino IDE 1.5.7 (or later possibly).
+The folder tree contains 3rd party hardware specification for monoxit education hardware module and arduino-tiny core with Attiny1634 support. The tree is designed for Arduino IDE 1.5.7 (or later possibly).
 
 ## Manual Deployment
 
