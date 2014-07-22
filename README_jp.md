@@ -1,7 +1,6 @@
 # プロジェクト
 Attiny1634対応のarduino-tinyコアを基にしています。  
-Arduino IDE 1.5.7用にデザインされ、サードパーティー定義とAttiny1634対応のarduino-tinyコア(https://github.com/rambo/arduino-tiny/tree/attiny1634)を含みます。  
-現在のmonoxitの学習用ハードウェアモジュールは、Attiny1634を利用しています。Attiny1634用のコードを作成するには、Arduino IDE 1.5.7に含まれているAVRツールチェインが必要です。
+Arduino IDE 1.5.7用にデザインされ、monoxitの学習用ハードウェアモジュールのサードパーティー定義とAttiny1634対応のarduino-tinyコア(https://github.com/rambo/arduino-tiny/tree/attiny1634) を含みます。
 
 ## 手動配置
 1. monoxit ホルダーをArduinoのスケッチブックのhardware ホルダーの下に配置します。スケッチブックホルダーは、Arduino IDEの環境設定で確認することができます。hardwareフォルダーが存在しない場合は新規に作成します。
