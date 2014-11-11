@@ -65,7 +65,7 @@ attiny1634at1bod1d8TSB.build.core=tiny
 
 attiny1634at1bod1d8TSB.upload.tool=tsb
 attiny1634at1bod1d8TSB.upload.protocol=arduino
-attiny1634at1bod1d8TSB.upload.speed=4800
+attiny1634at1bod1d8TSB.upload.speed=2400
 attiny1634at1bod1d8TSB.upload.maximum_size=15744
 
 attiny1634at1bod1d8TSB.program.tool=avrdude
