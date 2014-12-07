@@ -8,6 +8,12 @@ The folder tree contains 3rd party hardware specification for monoxit education 
 2. Place TinySafeBoot software modified for bluetooth connection (https://github.com/monoxit/tsb1634)  in monoxit\tiny\tools\tsb.
 3. (Optional) Place TinySafeBoot bootloader modified for Attiny1634 (https://github.com/monoxit/tsb1634) in monoxit\tiny\bootloader\tsb.
 
+## To Do
+1. Set TSB timeout to reasonable value (e.g. 3 to 6 sec) after writing bootloader.
+2. Autoreset support on Bluetooth SPP connection. (Hardware enhancement: CON-NOT-0.1uF-(10K pull-up)RST)
+3. linux verification.
+4. OSX verification.
+
 ## Credits
 https://code.google.com/p/arduino-tiny/  
 https://github.com/rambo/arduino-tiny/tree/attiny1634
