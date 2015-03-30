@@ -113,3 +113,60 @@ attiny1634at1bod1d8TSB.bootloader.lock_bits=0xFF
 attiny1634at1bod1d8TSB.bootloader.path={runtime.hardware.path}/tiny/bootloaders/tsb/
 attiny1634at1bod1d8TSB.bootloader.file=tn1634.hex
 
+###########################################################################
+# ATTiny45V @ 1 MHz (internal oscillator; BOD 1.8V)
+###########################################################################
+attiny45Vat1bod1d8TSB.name=ATTiny45V @ 1 MHz (internal oscillator; BOD 1.8V; TSB)
+attiny45Vat1bod1d8TSB.build.mcu=attiny45
+attiny45Vat1bod1d8TSB.build.f_cpu=1000000L
+attiny45Vat1bod1d8TSB.build.core=tiny
+
+attiny45Vat1bod1d8TSB.upload.tool=tsb
+attiny45Vat1bod1d8TSB.upload.protocol=arduino
+attiny45Vat1bod1d8TSB.upload.speed=2400
+attiny45Vat1bod1d8TSB.upload.maximum_size=3456
+
+attiny45Vat1bod1d8TSB.program.tool=avrdude
+attiny45Vat1bod1d8TSB.program.protocol=arduino
+attiny45Vat1bod1d8TSB.program.speed=9600
+attiny45Vat1bod1d8TSB.program.maximum_size=4096
+
+attiny45Vat1bod1d8TSB.erase.tool=avrdude
+attiny45Vat1bod1d8TSB.erase.protocol=arduino
+attiny45Vat1bod1d8TSB.erase.speed=9600
+attiny45Vat1bod1d8TSB.erase.maximum_size=4096
+
+attiny45Vat1bod1d8TSB.bootloader.tool=avrdude
+attiny45Vat1bod1d8TSB.bootloader.protocol=arduino
+attiny45Vat1bod1d8TSB.bootloader.speed=9600
+
+# 0 1 1 0 0010
+# CKDIV8 CKOUT - SUT CKSEL
+#
+# CKDIV8 0 Enable
+# SUT    0 Enable
+# CKSEL 0010 Internal 8MHz
+attiny45Vat1bod1d8TSB.bootloader.low_fuses=0x62
+
+# 1 1 0 1 0 111
+# RSTDISBL DWEN SPIEN WDTON EESAVE BODLEVEL
+#
+# SPIEN    0 Enable
+# EESAVE   0 Enable
+# BODLEVEL 110 1.8(V)
+attiny45Vat1bod1d8TSB.bootloader.high_fuses=0xD6
+
+# 111 01 01 0
+# - BODPD BODACT SELFPROGEN
+#
+# BODPD      01 Sampled
+# BODACT     01 Sampled
+# SELFPROGEN  0 Enable
+attiny45Vat1bod1d8TSB.bootloader.extended_fuses=0xFE
+
+# Never Lock
+attiny45Vat1bod1d8TSB.bootloader.unlock_bits=0xFF
+attiny45Vat1bod1d8TSB.bootloader.lock_bits=0xFF
+
+attiny45Vat1bod1d8TSB.bootloader.path={runtime.hardware.path}/tiny/bootloaders/tsb/
+attiny45Vat1bod1d8TSB.bootloader.file=tsb_tn45_b0b1_20140414.hex
